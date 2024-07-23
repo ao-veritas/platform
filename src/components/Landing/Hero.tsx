@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="w-[100vw] text-[#eeeeee] flex flex-col justify-center items-center px-20 pt-[15px] pb-[90px]">
+    <section className="w-[100vw] text-[#eeeeee] flex flex-col justify-center items-center lg:px-20 pt-[15px] pb-[90px]">
       <div className="relative flex flex-row justify-between items-center w-full">
         {/* <div className="absolute">
           <img src="https://oczih24gsxwrigu4bm5r2fc5tpj6hceucqphauaswmfcdj4a6hoa.arweave.net/cLKD64aV7RQanAs7HRRdm9PjiJQUHnBQErMKIaeA8dw" className="w-[390px] h-[390px]" />
@@ -26,7 +26,8 @@ const Hero = () => {
             className="w-[390px] h-[390px]"
           />
         </div>
-        <h1 className="text-[39px] ttbAnim text-center font-[Rale-SemiBold] z-10 w-fit mx-[-120px]">
+        <h1 className="lg:text-[39px] text-[27px]
+        ttbAnim text-center font-[Rale-SemiBold] z-10 w-fit mx-[-120px]">
           Explore the <span className=" text-[#40959D] block">Permissonless Ecosystem Funding</span> platform on AO
         </h1>
         <div className="w-fit rtlAnim">

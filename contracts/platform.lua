@@ -68,9 +68,7 @@ Handlers.add(
 -- Get Handers
 
 Handlers.add("Get User Data",
-    function(msg)
-        return msg.Action == "Get-User-Data"
-    end,
+    Handlers.utils.hasMatchingTag("Action", "Get-User-Data"),
     function(msg)
         local user = msg.From
         print("user" .. user)
