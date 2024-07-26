@@ -9,17 +9,17 @@ export default function Navbar() {
   // let path = window.location.hash.split("#");
   let path = location.pathname.split("/");
   console.log(path[1])
-  const validPaths = ["about", "profile", "faucet", "project", "addProject", ""];
-  let pageTitle = validPaths.includes(path[1]?.toLowerCase()) ? path[1] : "Home"; 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-    // event({
-    //   action: 'toggle_menu',
-    //   category: 'Navigation',
-    //   label: 'Menu Toggle',
-    //   value: isOpen ? 'Close' : 'Open',
-    // });
-  };
+  // const validPaths = ["about", "profile", "faucet", "project", "addProject", ""];
+  // let pageTitle = validPaths.includes(path[1]?.toLowerCase()) ? path[1] : "Home"; 
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  //   // event({
+  //   //   action: 'toggle_menu',
+  //   //   category: 'Navigation',
+  //   //   label: 'Menu Toggle',
+  //   //   value: isOpen ? 'Close' : 'Open',
+  //   // });
+  // };
   return (
     <>
     <nav className="md:flex hidden justify-between items-center px-[30px] py-[21px] fadeIn fixed w-full z-50 bg-[#40959d00] backdrop-blur-[9px]">

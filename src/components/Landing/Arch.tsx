@@ -1,6 +1,6 @@
 const Arch = () => {
   return (
-    <section className="w-[100vw] text-[#eeeeee] flex flex-col justify-center items-center fadeInScroll">
+    <section className="w-[100vw] text-[#eeeeee] lg:flex hidden flex-col justify-center items-center fadeInScroll">
       <img src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/arch/archBg.svg"} className="w-full" />
       <img
         src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/arch/archPointer.svg"}

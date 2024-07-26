@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import App from "./App.tsx";
-import { Footer, Navbar } from "./components";
+import { Footer} from "./components";
 import ScrollToTop from "./components/Layout/ScrollTop.tsx";
 import Layout from "./components/Layout/index.tsx";
 import "./index.css";
@@ -13,7 +13,6 @@ import Project from "./pages/Project.tsx";
 import User from "./pages/User.tsx";
 import Faucet from "./pages/Faucet.tsx";
 import { Toaster } from "sonner";
-import Nav from "./components/Layout/Nav.tsx";
 
 const router = createHashRouter([
   {

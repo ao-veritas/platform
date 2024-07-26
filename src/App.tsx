@@ -12,7 +12,7 @@ function App() {
     <main className="w-[100vw] flex flex-col gap-24 font-[Rale-Regular] mt-[120px]">
      
       <Hero />
-      {/* <Arch /> */}
+      <Arch />
       <ProjectsDisplay />
 
       {/* <img className={"fixed top-0 -z-10"} src={shading} alt="shading" /> */}
