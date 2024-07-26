@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { addProject } from "../utils/hooks";
 import { useConnection } from "arweave-wallet-kit";
+import { Navbar } from "../components";
 
 const AddProject = () => {
   const { connected } = useConnection();
@@ -85,7 +86,9 @@ const AddProject = () => {
     resetStates();
   };
   return (
-    <main className="w-full px-20">
+    <>
+     <Navbar/>
+    <main className="w-full px-20 mt-[120px]">
       <div className="mb-4">
         <label className="text-[24px] text-[#40959D] font-[Rale-SemiBold]">
           Project Name
@@ -248,6 +251,7 @@ const AddProject = () => {
         Post my project
       </button>
     </main>
+    </>
   );
 };
 

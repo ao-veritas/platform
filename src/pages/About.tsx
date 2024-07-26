@@ -1,20 +1,21 @@
+import { Navbar } from "../components";
 import TeamCard from "../components/TeamCard";
 
 export default function About() {
   return (
+    <>
+     <Navbar/>
     <main
-      className={`
-      flex flex-col items-center md:justify-center justify-between text-[#f1f1f1]`}
-    >
+      className={`flex flex-col items-center md:justify-center justify-between text-[#f1f1f1] mt-[120px]`}>
       <h1
-        className="uppercase tracking-wider font-medium leading-[51px]
+        className="uppercase tracking-wider font-bold leading-[51px]
       xl:text-[45px] text-[36px] text-[#4FD2DE]"
       >
         Team
       </h1>
       <h3
         className="capitalize pb-6 tracking-wide text-center md:font-normal font-medium
-      xl:text-[30px] md:text-[21px] text-[21px]"
+      xl:text-[30px] md:text-[21px] text-[15px]"
       >
         Meet the amazing team behind <span className={`font-[Regular] tracking-wide text-[#4FD2DE]`}>FundARs</span>
       </h3>
@@ -22,8 +23,8 @@ export default function About() {
       <div
         className=" 
       xl:gap-6 
-      lg:gap-[12px] lg:flex lg:flex-row
-      hidden
+      md:gap-[18px] flex md:flex-row
+      flex-col gap-3
       items-center justify-center"
       >
         <TeamCard
@@ -51,6 +52,6 @@ export default function About() {
           last={false}
         />
       </div>
-    </main>
+    </main></>
   );
 }

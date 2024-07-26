@@ -13,6 +13,7 @@ import Project from "./pages/Project.tsx";
 import User from "./pages/User.tsx";
 import Faucet from "./pages/Faucet.tsx";
 import { Toaster } from "sonner";
+import Nav from "./components/Layout/Nav.tsx";
 
 const router = createHashRouter([
   {
@@ -66,9 +67,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     >
       <div className="font-[Rale-Regular] min-h-screen flex flex-col justify-between gap-12 lining-figures">
         <Toaster />
-        <Navbar />
+        
         {/* @ts-expect-error types wrong with router */}
         <RouterProvider router={router}>
+        {/* <Navbar />
+        <Nav/> */}
           <ScrollToTop />
           {router}
         </RouterProvider>

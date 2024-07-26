@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: ProjectType }) {
   return (
     <Link
       to={"/project/" + project.ticker}
-      className="max-w-[390px] rounded-lg border-[1px] border-[#40959D]
+      className="max-w-[390px] rounded-lg border-[1px] border-[#40959D] place-self-center
       flex flex-col gap-[6px] justify-between items-center py-[15px] px-[21px]"
     >
       <img src={project.logo} className="w-[360px] h-[180px]" />

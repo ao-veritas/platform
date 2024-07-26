@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 import { toast } from "sonner";
 import { createDataItemSigner, message, result } from "@permaweb/aoconnect";
 import { AOETH_TOKEN_PID } from "../utils/constants";
+import { Navbar } from "../components";
 
 export default function Faucet() {
   const address = useActiveAddress();
@@ -41,7 +42,9 @@ export default function Faucet() {
   };
 
   return (
-    <main className="w-[100vw] flex flex-col gap-12 font-[Rale-Regular] px-20">
+    <>
+     <Navbar/>
+    <main className="w-[100vw] flex flex-col gap-12 font-[Rale-Regular] px-20 mt-[120px]">
       <div className="flex flex-col justify-start items-start">
         <h2 className="text-[#40959D] text-[27px] tracking-widest">$tAoEth Balance:</h2>
         {aoethBalance == null ? (
@@ -73,5 +76,6 @@ export default function Faucet() {
         Get $tAoEth
       </button>
     </main>
+    </>
   );
 }

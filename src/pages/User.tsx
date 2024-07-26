@@ -1,6 +1,6 @@
 import { ConnectButton, useActiveAddress } from "arweave-wallet-kit";
 import { useEffect } from "react";
-import { UserProjectCard } from "../components";
+import { Navbar, UserProjectCard } from "../components";
 import { useProjects, useUserAoETH, useUserData } from "../utils/hooks";
 
 const User = () => {
@@ -34,7 +34,9 @@ const User = () => {
   const totalStaked = stakedAmounts ? Object.values(stakedAmounts).reduce((acc: number, curr) => acc + curr.aoeth, 0) : null;
 
   return (
-    <main className="w-[100vw] flex flex-col gap-12 font-[Rale-Regular] px-20">
+    <>
+     <Navbar/>
+    <main className="w-[100vw] flex flex-col gap-12 font-[Rale-Regular] px-20 mt-[120px]">
       <div className="flex flex-col justify-start items-start">
         <h2 className="text-[#40959D] text-[27px] tracking-widest">$tAoEth Balance:</h2>
         {aoethBalance == null ? (
@@ -78,6 +80,7 @@ const User = () => {
         </div>
       )}
     </main>
+    </>
   );
 };
 

@@ -13,12 +13,10 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
   return (
     <div
       className={`ttbAnim teamWave text-center flex flex-col justify-start items-center
-        md:w-[100%] rounded-full w-fit h-fit min-h-full max-h-fit
+        w-[100%] sm:rounded-full rounded-b-lg rounded-t-full h-fit min-h-full max-h-fit
         xl:gap-[6px] lg:gap-[3px] gap-[6px]
         xl:pt-3 xl:pb-[30px] xl:px-3 
-        lg:pt-[9px] lg:pb-[18px] lg:px-[9px]
-        md:pt-[12px] md:pb-[21px] md;px-[12px]
-        pt-[9px] pb-[18px] px-[9px]
+        pt-[12px] pb-[21px] px-[12px]
         bg-[#272727] border-[#4FD2DE] border-[1px]
         `}
     >
@@ -30,15 +28,11 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
         className="rounded-full 
           justify-self-start
           xl:w-[135px] xl:h-[198px] xl:mb-[6.6px]
-          lg:w-[90px] lg:h-[132px] lg:mb-[6px]
-          md:w-[135px] md:h-[198px] md:mb-[6.6px]
-          w-[75px] h-[105px] mb-[1px]"
+          w-[135px] h-[198px] mb-[6.6px]"
       />
       <h2
         className="xl:text-[18px] xl:leading-[18px] 
-          lg:text-[12px] lg:leading-[12px]
-          md:text-[18px] md:leading-[18px]
-          text-[12px] leading-[12px]
+          text-[18px] leading-[18px]
          capitalize text-[#4FD2DE]"
       >
         {pname}
@@ -46,13 +40,10 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
       <h4
         className="  font-light
         xl:text-[12px] xl:leading-[15px] xl:max-w-[135px]
-        lg:text-[8.1px] lg:leading-[10.5px] lg:max-w-[75px]
-        md:text-[12px] md:leading-[15px] md:max-w-[135px]
-        text-[8.1px] leading-[10.5px] max-w-[60px]"
-      >
+        text-[12px] leading-[15px] max-w-[135px]"      >
         {info}
       </h4>
-      <div className=" flex flex-row xl:gap-3 gap-[9px] md:pt-3 pt-[3px]">
+      <div className=" flex flex-row xl:gap-3 gap-[9px] pt-3">
         <a href={twitter}>
           <img
             src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/twitterTeam.svg"}
@@ -60,9 +51,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
             height={30}
             width={30}
             className="xl:w-[15px] xl:h-[15px]
-              lg:w-3 lg:h-3 
-              md:w-[15px] md:h-[15px]
-              w-3 h-3 
+              w-[15px] h-[15px]
               hover:opacity-75 hover:scale-90 hover:cursor-pointer"
           />
         </a>
@@ -74,8 +63,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
               height={30}
               width={30}
               className="xl:w-[15px] xl:h-[15px]
-              lg:w-3 lg:h-3 w-3 h-3 
-              md:w-[15px] md:h-[15px] hover:opacity-75 hover:scale-90 hover:cursor-pointer"
+              w-[15px] h-[15px] hover:opacity-75 hover:scale-90 hover:cursor-pointer"
             />
           </a>
         )}
@@ -86,7 +74,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
                 xl:w-[15px] xl:h-[15px]
                 lg:w-3 lg:h-3
                 w-3 h-3 
-                md:w-[15px] md:h-[15px]`}
+                w-[15px] h-[15px]`}
             />{" "} */}
           </a>
         )}
